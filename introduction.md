@@ -1,10 +1,11 @@
-*   [**Introduction**](introduction)
+* [**Introduction**](introduction)
 
-*   [**Manual**](manual)
+* [**Manual**](manual)
 
-*   [**Tutorial**](tutorial)
+* [**Tutorial**](tutorial)
 
-*   [**Case Study**](case study)
+* [**Case Study**](case study)
+
 # [](#header-1)**Introduction to GrPAT**
 
 ## **GrPAT's Workflow**

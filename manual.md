@@ -1,10 +1,11 @@
-*   [**Introduction**](introduction)
+* [**Introduction**](introduction)
 
-*   [**Manual**](manual)
+* [**Manual**](manual)
 
-*   [**Tutorial**](tutorial)
+* [**Tutorial**](tutorial)
 
-*   [**Case Study**](case study)
+* [**Case Study**](case study)
+
 # [](#header-1)**Install and Run GrPAT**
 
 Here we give a brief manual for installing and running **GrPAT**. 
@@ -49,7 +50,7 @@ We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
 After successfully launching GrPAT, click on **Editor** and then click **LoadTree** in the subsequent pop-up window. 
 We provide several examples in the 'example' folder, you can randomly choose one and then click the **Verification** button to see if the result pops up.
 
-<div style="display:flex; flex-direction:row;">
+<div style="display:flex; justify-content: center;">
   <img src="resources/test.gif" style="width:80%">
 </div>
 

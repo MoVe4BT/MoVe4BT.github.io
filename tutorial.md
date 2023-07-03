@@ -1,10 +1,11 @@
-*   [**Introduction**](introduction)
+* [**Introduction**](introduction)
 
-*   [**Manual**](manual)
+* [**Manual**](manual)
 
-*   [**Tutorial**](tutorial)
+* [**Tutorial**](tutorial)
 
-*   [**Case Study**](case study)
+* [**Case Study**](case study)
+
 # **Tutorials**
 We provide an example for using **GrPAT**.
 ## **Run the GrPAT**
@@ -14,7 +15,7 @@ We provide an example for using **GrPAT**.
 Using the above command to run GrPAT, then click the **Editor** button.
 After this, you will see the following interface.
 
-<div style="display:flex; flex-direction:row;">
+<div style="display:flex; justify-content: center;">
   <img src="resources/interface.png" style="width:80%">
 </div>
 
@@ -49,7 +50,7 @@ In this example, we need to register four nodes:
 
 First, click on the button indicated by the arrow to add a custom node, enter the node name and select the node type.
 
-<div style="display:flex; align-items:center;">
+<div style="display:flex; align-items:center; justify-content: center;">
   <img src="resources/registration1.png" style="width:30%; height:30%;vertical-align: middle;  "  >
   <img src="resources/registration2.png" style="width:45%; height:30%; vertical-align: middle;" >
 </div>
@@ -61,7 +62,7 @@ After registering all the necessary action and condition nodes,
 you can construct a BehaviorTree by combining the already registered control nodes. 
 Just drag and drop them onto the right interface and connect them!
 
-<div style="display:flex; align-items:center;">
+<div style="display:flex; align-items:center;justify-content: center;">
  <img src="resources/registration3.png" style="width:70%; height:50%; vertical-align: middle;" >
 </div>
 
@@ -75,7 +76,7 @@ We can use variables to model environmental factors, and use constants to define
 -----  r_p     robot position,  r_p==0 means robot isn't at A, r_p==1 means robot is at A. Default: r_p=0
 -----  c_p     cube position,   r_p==0 means cube is at A, c_p==1 means cube is in the robot arm. Default: c_p=0
 ```
-<div id="gif-container">
+<div id="gif-container" style="display:flex; align-items:center;justify-content: center;" >
   <img src="resources/var2.gif" alt="Your GIF" style="width:70%; height:50%; vertical-align: middle;">
 </div>
 
@@ -127,7 +128,7 @@ the **time** and **success threshold**  is required to be given in positive inte
 To add ports to the node, simply right-click on it as shown in the left figure below.
 The complete diagram is shown in the right figure below.
 
-<div style="display:flex">
+<div style="display:flex; justify-content: center;">
 <div id="gif-container">
   <img src="resources/port1.gif" alt="Your GIF" style="width:100%; height:80%; vertical-align: middle;">
 </div>
@@ -146,7 +147,7 @@ the success_program of _PickUP_ means that after the execution of _PickUP_ node 
 #### [](#header-4)**(a).  LTL properties**
 
 Some LTL's temporal logic operators and their semantics as shown below (Image from [PAT User Manual](https://pat.comp.nus.edu.sg/wp-source/resources/OnlineHelp/htm/index.htm)):
-<div style="display:flex; flex-direction:row;">
+<div style="display:flex;justify-content: center;">
   <img src="resources/LTLSemantics.png" style="width:80%">
 </div>
 
@@ -159,17 +160,17 @@ the input LTL formula is:
 Here **#assert BehaviorTree |=** are keywords.
 
 
-
-
 #### [](#header-4)**(b). Timed behavior properties**
 Our tool supports reachability property verification to verify timed behavior-related properties. 
 Reachability verification verifies the reachability properties (i.e., a fragment of LTL) of the model. 
 A reachability property specifies that a state is reachable from the initial state.
 
 We now limit the robot to run for only 12 units time in the following way:
-  <div style="flex:1;padding-right:5px">
+<div style="display: flex; justify-content: center;">
     <img src="resources/deadlinetime.gif" alt="GIF 1" style="width:80%">
-  </div>
+</div>
+
+
 
 We can check whether the robot is able to eventually pick up the cube like 
 
@@ -194,39 +195,11 @@ Totally, the input properties of this example are:
 
 ### [](#header-3)**(5). Start verifying**
 You can now click the **Verification** button and wait for the verification results to pop up!
-<div id="gif-container">
+<div id="gif-container" style="display:flex; align-items:center;justify-content: center;">
   <img src="resources/verify.gif" alt="Your GIF" style="width:70%; height:50%; vertical-align: middle;">
 </div>
 
 
-
-[//]: # (The final complete PAT input of this example is like below, you can find this in 'input.txt'.)
-
-[//]: # ()
-[//]: # (```)
-
-[//]: # (var c_p=0; var r_p=0;)
-
-[//]: # (Picked = [c_p==1]Picked_s->Success [] [c_p==0]Picked_f->Fail;)
-
-[//]: # (AtA = [r_p==1]AtA_s->Success [] [r_p==0]AtA_f->Fail;)
-
-[//]: # (GoToA = Wait[10];&#40;GoToA_s{r_p=1}->Success [] GoToA_f->Fail [] GoToA_r->Running&#41;;)
-
-[//]: # (PickUP = Wait[5];&#40;PickUP_s{c_p=1}->Success [] PickUP_f->Fail [] PickUP_r->Running&#41;;)
-
-[//]: # ()
-[//]: # (BehaviorTree= Loop&#40;Picked|>&#40;&#40;AtA|>GoToA&#41;;PickUP&#41;&#41;; //     MainBT)
-
-[//]: # (DeadlineProcess = BehaviorTree deadline[12];)
-
-[//]: # (#assert BehaviorTree |= G&#40; AtA_f -> F &#40;GoToA_s || GoToA_f || GoToA_r&#41;&#41;;)
-
-[//]: # (#define goal c_p==1;)
-
-[//]: # (#assert DeadlineProcess  reaches goal;)
-
-[//]: # (```)
 
 # [](#header-1)**Contacts**
 
