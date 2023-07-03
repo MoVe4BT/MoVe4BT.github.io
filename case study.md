@@ -10,7 +10,9 @@ layout: default
 
 * [**Case Study**](case study)
 
+
 # Case Study
+
 We selected 9 examples for case study, of which case.1 was presented in our paper and many of the remaining were selected from existing papers.
 
 Users can click the **Load Tree** button of the interface and load them under the project's **examples** folder
