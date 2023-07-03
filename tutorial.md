@@ -32,7 +32,7 @@ We have divided it into three steps：
 --4. Input properties 
 --5. Start verifying
 ```
-### [](#header-3)**(1). Nodes registration and Constructing BehaviorTree**
+### [](#header-3)**(1) Nodes registration and Constructing BehaviorTree**
 The control node has been declared on the left interface earlier. 
 Please note that currently only Sequence, Fallback, and Parallel are available.
 You can register Action nodes and Condition nodes as needed according to your own requirements.
@@ -69,7 +69,7 @@ Just drag and drop them onto the right interface and connect them!
 <br>
 <br>
 
-### [](#header-3)**(2). Variables declaration**
+### [](#header-3)**(2) Variables declaration**
 We can use variables to model environmental factors, and use constants to define nodes execution time.
 ```
 --  Variables
@@ -88,7 +88,7 @@ The complete input in this example is:
 ```
 var r_p=0; var c_p=0;
 ```
-### [](#header-3)**(3). Nodes semantics embedding**
+### [](#header-3)**(3) Nodes semantics embedding**
 We designed **guard** port for condition nodes, while action nodes have **guard**, **program**, **time**, and **success threshold** port.
 The **guard** specifies the condition the variables should satisfy to produce the event, 
 the **program** gives the data operations when the event happens, 
@@ -142,9 +142,9 @@ This means that _Picked_ will only return success if **c_p==1** is satisfied, an
 the execution of _Picked_ will return failure, **c_p==1** means that the cube has already been picked up; 
 the success_program of _PickUP_ means that after the execution of _PickUP_ node returns success, it will set **c_p** as 1. 
 
-### [](#header-3)**(4). Input properties**
+### [](#header-3)**(4) Input properties**
 
-#### [](#header-4)**(a).  LTL properties**
+#### [](#header-4)**(a) LTL properties**
 
 Some LTL's temporal logic operators and their semantics as shown below (Image from [PAT User Manual](https://pat.comp.nus.edu.sg/wp-source/resources/OnlineHelp/htm/index.htm)):
 <div style="display:flex;justify-content: center;">
@@ -160,7 +160,7 @@ the input LTL formula is:
 Here **#assert BehaviorTree |=** are keywords.
 
 
-#### [](#header-4)**(b). Timed behavior properties**
+#### [](#header-4)**(b) Timed behavior properties**
 Our tool supports reachability property verification to verify timed behavior-related properties. 
 Reachability verification verifies the reachability properties (i.e., a fragment of LTL) of the model. 
 A reachability property specifies that a state is reachable from the initial state.
@@ -193,7 +193,7 @@ Totally, the input properties of this example are:
 ```
 
 
-### [](#header-3)**(5). Start verifying**
+### [](#header-3)**(5) Start verifying**
 You can now click the **Verification** button and wait for the verification results to pop up!
 <div id="gif-container" style="display:flex; align-items:center;justify-content: center;">
   <img src="resources/verify.gif" alt="Your GIF" style="width:70%; height:50%; vertical-align: middle;">
