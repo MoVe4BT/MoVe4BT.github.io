@@ -411,7 +411,7 @@ This second assert means that the robot's will visit position A, B and C in orde
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions about **GrPAT**.
+Please feel free to contact us if you have any questions  about **GrPAT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 

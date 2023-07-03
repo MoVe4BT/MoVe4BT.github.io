@@ -77,7 +77,7 @@ We can use variables to model environmental factors, and use constants to define
 -----  c_p     cube position,   r_p==0 means cube is at A, c_p==1 means cube is in the robot arm. Default: c_p=0
 ```
 <div id="gif-container" style="display:flex; align-items:center;justify-content: center;" >
-  <img src="resources/InputGlobalVars.gif" alt="Your GIF" style="width:70%; height:50%; vertical-align: middle;">
+  <img src="resources/var2.gif" alt="Your GIF" style="width:70%; height:50%; vertical-align: middle;">
 </div>
 
 Please note that **var** is a keyword. 
