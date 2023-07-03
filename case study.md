@@ -26,9 +26,9 @@ For the Recharge part, if the robot's battery level is above 10% while the robot
 In other cases, the robot must recharge or keep recharging until the battery level reaches 100%. 
 Robot increases its charge by 1% for every 10 time units that pass while recharging.
 In the Monitor and Answer parts to facilitate the answer response, we implemented a communication by using a shared variable **a**.
-When the action node Monitoring succeeds, it sets **a** to 1.
-The condition node Ask only returns success when **a** equals 1, which enables the execution of the action node Answer.
-After the successful execution of Answer, **a** is set to 0.
+When the action node Monitoring succeeds, it sets _a_ to 1.
+The condition node Ask only returns success when _a_ equals 1, which enables the execution of the action node Answer.
+After the successful execution of Answer, _a_ is set to 0.
 ### [](#header-3)**(2)Behavior Tree:**
 <br>
 <img src="resources/RechargingMonitorAnswer.png" alt="ChargeAndAnswer" style="display:block; margin:- auto; ;justify-content: center;">
@@ -50,7 +50,7 @@ Initial Value: 1
 
 ### [](#header-3)**(4)Property:**
 
-* LTL property
+#### [](#header-4)(a)**LTL property**
 ```
 a=1,b=5,c=1 
 ```
@@ -59,9 +59,8 @@ a=1,b=5,c=1
 ```
 This assert means that once the robot's battery level drops below 10% ,Recharge should be the next action.
 
-<br>
 
-* Timed behavior property
+#### [](#header-4)(a)**Timed behavior property**
 
 Verification setting: 
 ```
@@ -73,12 +72,13 @@ a=1,b=20,c=0  Deadline Time:300
 #assert DeadlineProcess reaches goal1;
 #assert DeadlineProcess reaches goal2;
 ```
+
 We defined two battery level goals, and use this two asserts to check if the robot can be charged to 40% or 60%.
 
 
 ### [](#header-3)**(5)Result:**
 
-* LTL property verification result
+#### [](#header-4)(a)**LTL property verification result**
 
 <div style="display: flex; justify-content: center;">
 <img src="resources/result9.png" alt="result9" style="display:block; margin:- auto;">
@@ -89,7 +89,7 @@ This counterexample implies that even if the robot's battery level is below 10%,
 **Ask**, and **Answer**. 
 
 Therefore, we can add a requirement such that nodes **Monitoring**, **Ask**, and **Answer** cannot be executed when the battery level is below 10%.
-We can achieve this by adding a **guard** **b > 10** to these three nodes. 
+We can achieve this by adding a **guard** _b > 10_ to these three nodes. 
 The image below is the new BehaviorTree: 
 <div style="display: flex; justify-content: center;">
 <img src="resources/a.png" alt="a" style="display:block; margin:- auto;">
@@ -97,8 +97,7 @@ The image below is the new BehaviorTree:
 
 After modifying the BT, the verification result is valid. Therefore, we construct a better BT by utilizing the counterexample.
 
-* Timed behavior property verification result
-
+#### [](#header-4)(a)**Timed behavior property verification result**
 <div style="display: flex; justify-content: center;">
 <img src="resources/result10.png" alt="result10" style="display:block; margin:- auto;">
 </div>
@@ -107,7 +106,7 @@ which means that the robot can be charged up to 40% within 300 units of time, bu
 
 ## [](#header-2) **CASE2:. Pick and Place(1)**
 ### [](#header-3)**(1)Description:**
-This BT requires a robot to pick up a cube at point **A** and then place it at point **B**.
+This BT requires a robot to pick up a cube at point A and then place it at point B.
 The BT's execution can be divided into two phases: the left side is the Pick phase, and the right is the Place phase. 
 The BT first checks whether **Picked** holds for the Pick phase. 
 If it does, the BT executes the Place phase; 
@@ -412,7 +411,7 @@ This second assert means that the robot's will visit position A, B and C in orde
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions about **CCMOP**.
+Please feel free to contact us if you have any questions about **GrPAT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 
