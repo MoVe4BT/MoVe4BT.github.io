@@ -6,7 +6,7 @@
 
 * [**Case Study**](case study)
 
-# [](#header-1)**Introduction to GrPAT**
+# [](#header-1)**Introduction to MoVe4BT**
 
 ## **Workflow**
 

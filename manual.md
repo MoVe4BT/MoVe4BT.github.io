@@ -60,7 +60,7 @@ please refer to our [**Tutorial**](tutorial) and paper.
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions about **GrPAT**.
+Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 
