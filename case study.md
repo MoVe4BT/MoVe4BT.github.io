@@ -115,7 +115,7 @@ If it holds, the BT can perform **PickUp** directly;
 Otherwise, the BT drives the robot first to execute **GoToA**, and then perform **PickUp**. 
 The BT first checks whether **Placed** holds for the Place phase. 
 If it does, the robot has completed the task; Otherwise, the BT checks whether **AtB** holds. 
-If it does, the BT can perform $\mathtt{Place}$ directly; Otherwise, the BT should first execute **GoToB**, and then perform **Place**.
+If it does, the BT can perform **Place** directly; Otherwise, the BT should first execute **GoToB**, and then perform **Place**.
 
 ### [](#header-3)**(2) Behavior Tree**
 <div style="display: flex; justify-content: center;">
