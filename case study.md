@@ -50,7 +50,7 @@ Initial Value: 1
 
 ### [](#header-3)**(4) Property**
 
-#### [](#header-4)(a)**LTL property**
+#### [](#header-4)1**.LTL property**
 ```
 a=1,b=5,c=1 
 ```
@@ -60,7 +60,7 @@ a=1,b=5,c=1
 This assert means that once the robot's battery level drops below 10% ,Recharge should be the next action.
 
 
-#### [](#header-4)(a)**Timed behavior property**
+#### [](#header-4)2**.Timed behavior property**
 
 Verification setting: 
 ```
@@ -410,7 +410,7 @@ This second assert means that the robot's will visit position A, B and C in orde
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions  about **GrPAT**.
+Please feel free to contact us if you have any questions  about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 

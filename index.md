@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-   
-**GrPAT** is a model checking tool for behavior trees. Which also support the modeling of timed behavior of behavior trees. 
-It combines the graphical editor [Groot](https://github.com/BehaviorTree/Groot) and model checker Process Analysis Toolkit ([PAT](https://pat.comp.nus.edu.sg/?page_id=2611)).
-Users can utilize Groot to construct behavior trees and input corresponding specifications for verifying the behavior trees.
 
-Here, PAT accepts  languages is Timed CSP<sub>bt</sub>.  For more detailed information about this language, please refer to our paper.
+**MoVe4BT** is a model checking tool for the modeling and verification of the BTs with timed behavior. 
+The modeling language we used is Timed CSP<sub>bt</sub>, which is the customized language. 
+The tool is constructed by combining the graphical editor [Groot](https://github.com/BehaviorTree/Groot) and the model checker Process Analysis Toolkit ([PAT](https://pat.comp.nus.edu.sg/?page_id=2611)). 
+For more detailed information about it, please refer to our paper.
 * * *
 
 *   [**Introduction**](introduction)
@@ -23,7 +22,7 @@ Here, PAT accepts  languages is Timed CSP<sub>bt</sub>.  For more detailed infor
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions about **GrPAT**.
+Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 

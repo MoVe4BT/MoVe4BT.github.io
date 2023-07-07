@@ -7,12 +7,12 @@
 * [**Case Study**](case study)
 
 # **Tutorials**
-We provide an example for using **GrPAT**.
-## **Run the GrPAT**
+We provide an example for using **MoVe4BT**.
+## **Run MoVe4BT**
 ```shell
 ./Groot
 ```
-Using the above command to run GrPAT, then click the **Editor** button.
+Using the above command to run MoVe4BT, then click the **Editor** button.
 After this, you will see the following interface.
 
 <div style="display:flex; justify-content: center;">
@@ -22,7 +22,7 @@ After this, you will see the following interface.
 ## **The PickUp Example**
 This example describes a robot that needs to pick up a cube at location A.
 
-Now, we will illustrate the usage of GrPAT with this simple PickUp example.
+Now, we will illustrate the usage of MoVe4BT with this simple PickUp example.
 We have divided it into three steps：
 
 ```
@@ -32,7 +32,7 @@ We have divided it into three steps：
 --4. Input properties 
 --5. Start verifying
 ```
-### [](#header-3)**(1) Nodes registration and Constructing BehaviorTree**
+### [](#header-3)**(1) Nodes registration and Constructing Behavior Trees**
 The control node has been declared on the left interface earlier. 
 Please note that currently only Sequence, Fallback, and Parallel are available.
 You can register Action nodes and Condition nodes as needed according to your own requirements.
@@ -203,7 +203,7 @@ You can now click the **Verification** button and wait for the verification resu
 
 # [](#header-1)**Contacts**
 
-Please feel free to contact us if you have any questions about **GrPAT**.
+Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
 
