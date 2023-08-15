@@ -42,7 +42,7 @@ We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
 ## [](#header-2)**4 Install and run MoVe4BT**
 
 ```shell
-   git clone https://github.com/Huangps/GrPat.git
+   git clone https://github.com/Huangps/MoVe4BT.git
    cd groot
    cd run
    ./Groot
