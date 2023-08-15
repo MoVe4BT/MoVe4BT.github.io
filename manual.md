@@ -49,7 +49,7 @@ We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
 ```
 
 ## [](#header-2)**5 Test**
-After successfully launching GrPAT, click on **Editor** and then click **LoadTree** in the subsequent pop-up window. 
+After successfully launching MoVe4BT, click on **Editor** and then click **LoadTree** in the subsequent pop-up window. 
 We provide several examples in the 'example' folder, you can randomly choose one and then click the **Verification** button to see if the result pops up.
 
 <div style="display:flex; justify-content: center;">
