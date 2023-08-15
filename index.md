@@ -8,15 +8,15 @@ The tool is constructed by combining the graphical editor [Groot](https://github
 For more detailed information about it, please refer to our paper.
 * * *
 
-*   [**Introduction**](introduction)
+* [**Introduction**](introduction)
 
-*   [**Manual**](manual)
+* [**Manual**](manual)
 
-*   [**Tutorial**](tutorial)
+* [**Tutorial**](tutorial)
 
-*   [**Case Study**](case study)
+* [**Case Study**](case study)
 
-
+* [**Paper Materials**](paper materials)
 
 
 

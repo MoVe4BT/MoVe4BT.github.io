@@ -10,6 +10,7 @@ layout: default
 
 * [**Case Study**](case study)
 
+* [**Paper Materials**](paper materials)
 
 # Case Study
 

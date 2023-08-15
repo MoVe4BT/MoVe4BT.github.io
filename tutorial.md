@@ -6,6 +6,8 @@
 
 * [**Case Study**](case study)
 
+* [**Paper Materials**](paper materials)
+
 # **Tutorials**
 We provide an example for using **MoVe4BT**.
 ## **Run MoVe4BT**

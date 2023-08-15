@@ -6,9 +6,11 @@
 
 * [**Case Study**](case study)
 
-# [](#header-1)**Install and Run GrPAT**
+* [**Paper Materials**](paper materials)
 
-Here we give a brief manual for installing and running **GrPAT**. 
+# [](#header-1)**Install and Run MoVe4BT**
+
+Here we give a brief manual for installing and running **MoVe4BT**. 
 
 We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
 
@@ -37,7 +39,7 @@ We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
   sudo apt-get install qtwebengine5-dev qtpositioning5-dev
 ```
 
-## [](#header-2)**4 Install and run GrPAT**
+## [](#header-2)**4 Install and run MoVe4BT**
 
 ```shell
    git clone https://github.com/Huangps/GrPat.git
