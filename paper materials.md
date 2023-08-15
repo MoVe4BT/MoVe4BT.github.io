@@ -22,11 +22,11 @@ So, we only compare with the Leaf coding.
 We compare both modeling and verification.
 ### **Modeling**
 
-
 |             |         BehaVerify          |      MoVe4BT      |
 |:-----------:|:---------------------------:|:-----------------:|
 |  Node Type  | Execution,Control,Decorator | Execution,Control |
 | Concurrency |             No              |        Yes        |
+
 Compared to BehaVerify, we do not support modeling Decorator nodes.
 Although we all support modeling control nodes such as Sequence nodes, Fallback nodes, and Parallel nodes.
 However, the mechanism of Parallel nodes is fundamentally different, the child nodes of the Parallel node of BehaVerify are still executed in the order from left to right, while the child nodes of our parallel node truly achieve concurrency.
@@ -37,6 +37,7 @@ We also selected BehaVerify examples to model in MoVe4BT, showing that we can mo
 |             |    BehaVerify     |       MoVe4BT        |
 |:-----------:|:-----------------:|:--------------------:|
 | Specifications  | LTL,CTL,Invariant  | LTL,Reachability|
+
 Compared to BehaVerify, we do not support CTL and Invariant verification but support Reachability verification.
 We have selected two examples with LTL property verification in BehaVerify, showing that it can also be verified with MoVe4BT.
 
