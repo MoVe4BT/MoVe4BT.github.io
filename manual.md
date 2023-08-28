@@ -65,5 +65,6 @@ please refer to our [**Tutorial**](tutorial) and paper.
 Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
-
+*   <font color="#0000FF" size="4"> Weijiang Hong (hongweijiang17@nudt.edu.cn)</font>
 *   <font color="#0000FF" size="4"> Zhenbang Chen (zbchen@nudt.edu.cn)</font>
+*   <font color="#0000FF" size="4"> Ji Wang (wj@nudt.edu.cn)</font>

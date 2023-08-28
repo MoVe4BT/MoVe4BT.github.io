@@ -12,11 +12,6 @@
 
 ## **Workflow**
 
-<br>
-
-<img src="resources/workflow1.png" alt="framework" style="display:block; margin:- auto;">
-
-<br>
 
 Firstly, users can create the BT structure and specify the detailed semantics of each node, including the manipulations of data, the data constraints, the execution period, etc. 
 Besides, users can also specify the properties for verification, which also includes the timed requirements. 
@@ -28,5 +23,6 @@ If the model does not satisfy the property, a counterexample will be generated t
 Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
-
+*   <font color="#0000FF" size="4"> Weijiang Hong (hongweijiang17@nudt.edu.cn)</font>
 *   <font color="#0000FF" size="4"> Zhenbang Chen (zbchen@nudt.edu.cn)</font>
+*   <font color="#0000FF" size="4"> Ji Wang (wj@nudt.edu.cn)</font>

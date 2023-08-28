@@ -208,5 +208,6 @@ You can now click the **Verification** button and wait for the verification resu
 Please feel free to contact us if you have any questions about **MoVe4BT**.
 
 *   <font color="#0000FF" size="4">Peishan Huang (huang_ps@nudt.edu.cn)</font>
-
+*   <font color="#0000FF" size="4"> Weijiang Hong (hongweijiang17@nudt.edu.cn)</font>
 *   <font color="#0000FF" size="4"> Zhenbang Chen (zbchen@nudt.edu.cn)</font>
+*   <font color="#0000FF" size="4"> Ji Wang (wj@nudt.edu.cn)</font>
