@@ -16,7 +16,7 @@ For more detailed information about it, please refer to our paper.
 
 * [**Case Study**](case study)
 
-* [**Paper Materials**](paper materials)
+* [**Supplemental Material**](supplemental material)
 
 
 

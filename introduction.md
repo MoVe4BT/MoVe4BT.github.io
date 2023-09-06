@@ -6,7 +6,7 @@
 
 * [**Case Study**](case study)
 
-* [**Paper Materials**](paper materials)
+* [**Supplemental Material**](supplemental material)
 
 # [](#header-1)**Introduction to MoVe4BT**
 
