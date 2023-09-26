@@ -53,7 +53,7 @@ We use the Checklist benchmark of BehaVerify for evaluation.
 The reason for not choosing the BlueROV benchmark is that it contains parallel nodes.
 Checklist is a series of examples, consisting of many fallback nodes connected by sequence nodes, 
 and each rollback node is composed of a condition node and an action node.
-The BTs corresponding to Checklist5 and Checklsit10 is shown in the figure below：
+The BTs corresponding to Checklist5 and Checklsit10 is shown in the figure below(the image is from the website of BehaVerify)：
 <div style="display: flex;">
   <img src="resources/checklist5.png" alt="Image 1" style="width:100%; padding: 4px;">
 </div>
@@ -71,12 +71,14 @@ G(safetychecki_f->  !X(backupi_r || backupi_f || backupi_s));
 We selected 11 BTs from the Checklist benchmark, namely checklist1, checklist5, ..., checklist50, for our evaluation. 
 These BTs progressively increase in scales and properties. We carried out 552 verification tasks (i.e., each task contains a BT and an LTL)
 using both approaches.
-The evaluation results are shown in the figure below.
+The evaluation results are shown in the figure below：
 
 <div style="display: flex;">
   <img src="resources/Time_comparison.png" alt="Image 1" style="flex: 50%; padding: 5px;">
       <img src="resources/Memory_comparison.png" alt="Image 2" style="flex: 50%; padding: 5px;">
 </div>
+
+
 
 In total, our tool and BehaVerify need 2.32s and 73.07s to finish all the verification tasks, respectively, indicating our tool’s efficiecy. 
 Besides, our tool needs more memory than BehaVerify.
