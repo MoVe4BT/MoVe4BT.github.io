@@ -51,7 +51,7 @@ Compared to BehaVerify, we do not support CTL and Invariant property verificatio
 
 We use the Checklist benchmark of BehaVerify for evaluation.
 The reason for not choosing the BlueROV benchmark is that it contains parallel nodes.
-Checklist is a series of examples, consisting of many follback nodes connected by sequence nodes, 
+Checklist is a series of examples, consisting of many fallback nodes connected by sequence nodes, 
 and each rollback node is composed of a condition node and an action node.
 The BTs corresponding to Checklist5 and Checklsit10 is shown in the figure below：
 <div style="display: flex;">
