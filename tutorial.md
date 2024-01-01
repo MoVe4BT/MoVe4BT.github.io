@@ -25,7 +25,7 @@ After this, you will see the following interface.
 This example describes a robot that needs to pick up a cube at location A.
 
 Now, we will illustrate the usage of MoVe4BT with this simple PickUp example.
-We have divided it into three steps：
+We have divided it into five steps：
 
 ```
 --1. Nodes registration and Constructing BehaviorTree
@@ -72,6 +72,10 @@ Just drag and drop them onto the right interface and connect them!
 <br>
 
 ### [](#header-3)**(2) Variables declaration**
+MoVe4BT only supports integer, Boolean and integer arrays, declared as follows: _var x = Int32_ for integers, 
+_var x = true/false_ for booleans and _var x = [integer1,integer2,...,integern]_ for integer arrays.
+In our tool, the integer variable is a 32-bit signed integer, which means it can store values ranging from -2147483648 to 2147483647.
+
 We can use variables to model environmental factors, and use constants to define nodes execution time.
 ```
 --  Variables
@@ -92,10 +96,17 @@ var r_p=0; var c_p=0;
 ```
 ### [](#header-3)**(3) Nodes semantics embedding**
 We designed **guard** port for condition nodes, while action nodes have **guard**, **program**, **time**, and **success threshold** port.
-The **guard** specifies the condition the variables should satisfy to produce the event, 
-the **program** gives the data operations when the event happens, 
-the **time** specifies the action execution period,
-and the **success threshold** specifies the action will return success at least once after **N** times executions.
+
+The **guard** specifies the condition the variables should satisfy to produce the event.
+In the absence of a guard or when multiple guards simultaneously fulfill the conditions, the model randomly selects from the feasible events. Additionally, a guard evaluating to false indicates that the corresponding event can never occur, whereas a guard evaluating to true signifies that the associated event may occur. 
+
+the **program** gives the data operations when the event happens.
+
+
+The **time** specifies the action execution period.
+
+Tnd the **success threshold** specifies the action will return success at least once after **N** times executions.
+
 ```
 --  Guard port
 -----  success_guard   if success_guard is satisfied, then executing this node will return success.
@@ -118,12 +129,14 @@ The **guard** is a quantifier-free first-order logic formula on the data variabl
 ```
 c_p==0 && r_p==0
 ```
+
 The **program** is a program that manipulates the data variables and can be specified in any programming language. 
 In our implementation, the **program** is required to be given in C# language like:
 ```
 c_p=1;r_p=1
 ```
-the **time** and **success threshold**  is required to be given in positive integers.
+
+The **time** and **success threshold**  is required to be given in positive integers.
 
 <br>
 

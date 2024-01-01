@@ -12,7 +12,7 @@
 
 Here we give a brief manual for installing and running **MoVe4BT**. 
 
-We recommend that you use Ubuntu 20.04 with gcc-11 and g++-11.
+We recommend that you use Ubuntu 22.04 with gcc-11 and g++-11.
 
 ## [](#header-3)**1 Install and compile BehaviorTreeCPP-3.8X**
 ```shell
