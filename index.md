@@ -4,8 +4,8 @@ layout: default
 
 
 Welcome to the **MoVe4BT** tool website! MoVe4BT is a specialized tool for the formal modeling and verification of Behavior Trees (BTs). 
-It uses the Timed CSPbt modeling language, which extends Timed CSP with combinatorial operators and basic processes. 
-The tool is implemented based on the Process Analysis Toolkit ([PAT](https://pat.comp.nus.edu.sg/?page_id=2611)) and the [Groot](https://github.com/BehaviorTree/Groot) graphical editor, providing a user-friendly interface that allows users to easily construct BTs graphically and specify Linear Temporal Logic (LTL) properties as well as timing properties.
+It uses the Timed CSPbt modeling language, which extends Timed CSP with composition operators and basic processes. 
+The tool is implemented based on the Process Analysis Toolkit ([PAT](https://pat.comp.nus.edu.sg/?page_id=2611)) and the [Groot](https://github.com/BehaviorTree/Groot) graphical editor, providing a user-friendly interface that allows users to easily construct BTs graphically and specify Linear Temporal Logic (LTL) properties as well as timed properties.
 
 Key features of MoVe4BT include:
 
