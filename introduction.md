@@ -11,13 +11,11 @@
 # [](#header-1)**Introduction to MoVe4BT**
 
 ## **Workflow**
+<div style="display:flex; justify-content: center;">
+  <img src="resources/workflow3.pdf" style="width:80%">
+</div>
+First, users can create the BT structure and specify the detailed semantics of each node, including the manipulations of data, the data constraints, the execution time, etc. Then, task requirements can be  specified as the verification properties, including the timed properties. After completing the modeling of the BT, the corresponding Timed CSP<sub>bt</sub> model will be automatically generated. Based on the properties, a model checking-based verification process  will be carried out. If the model does not satisfy the property, a counterexample will be generated to guide users to fix the errors in the BT. 
 
-
-Firstly, users can create the BT structure and specify the detailed semantics of each node, including the manipulations of data, the data constraints, the execution period, etc. 
-Besides, users can also specify the properties for verification, which also includes the timed requirements. 
-After completing the modeling of the BT, the corresponding Timed CSP<sub>bt</sub> model will be automatically generated. 
-Then, based on the properties provided by the user, a model checking-based verification process  will be carried out. 
-If the model does not satisfy the property, a counterexample will be generated to guide users to fix the errors in BTs.
 # [](#header-1)**Contacts**
 
 Please feel free to contact us if you have any questions about **MoVe4BT**.
